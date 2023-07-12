@@ -1,0 +1,142 @@
+nav {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(76, 212, 139);
+  border-radius: 0 0 30px 30px;
+  border: 2px solid black;
+  border-top: 0px;
+}
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.contenedorAlumno,
+.contenedorDocente {
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .contenedorAlumno,
+  .contenedorDocente {
+    height: 500px;
+    width: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .contenedorAlumno,
+  .contenedorDocente {
+    height: 500px;
+    width: 330px;
+  }
+  .img-avatar {
+    height: 300px !important;
+  }
+  #home, #about, #cont, #qya {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .contenedorAlumno,
+  .contenedorDocente {
+    height: 300px;
+    width: 500px;
+    margin-bottom: 10px;
+  }
+  #titulo h1 {
+    font-size: 50px !important;
+  }
+  .img-avatar {
+    height: 150px !important;
+  }
+  #contenedorPrincipal {
+    padding-top: 40px;
+  }
+  #home,
+  #about,
+  #qya,
+  #cont {
+    width: 35px !important;
+    height: 35px !important;
+    background-size: cover;
+    color: transparent;
+    font-size: 0;
+  }
+}
+@media (max-width: 576px) {
+  .contenedorAlumno,
+  .contenedorDocente {
+    height: 300px;
+    width: 340px;
+    margin-bottom: 10px;
+  }
+  #titulo h1 {
+    font-size: 30px !important;
+  }
+  nav ul li {
+    font-size: 5px;
+  }
+}
+h1 {
+  font-size: 90px !important;
+  text-align: center;
+  padding-top: 40px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600 !important;
+}
+
+h2 {
+  font-size: 30px !important;
+}
+
+#contenedorPrincipal {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorAlumno {
+  border: 1px solid rgb(31, 177, 31);
+}
+
+.contenedorDocente {
+  border: 1px solid rgb(167, 15, 15);
+}
+
+.img-avatar {
+  height: 350px;
+}
+
+.btnlog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+
+p {
+  text-align: justify;
+}
+
+#contacto {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactoform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#abouts {
+  padding-bottom: 30vh;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=main.css.map */

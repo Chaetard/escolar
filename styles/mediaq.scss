@@ -1,0 +1,60 @@
+@import "../styles/contenedoresL.scss";
+@import "../styles/iconsnav.scss";
+
+.contenedorAlumno,
+.contenedorDocente {
+  @include contenedorG;
+  border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  .contenedorAlumno,
+  .contenedorDocente {
+    @include contenedorM;
+  }
+}
+
+@media (max-width: 992px) {
+  .contenedorAlumno,
+  .contenedorDocente {
+    @include contenedorMS;
+  }
+  .img-avatar {
+    height: 300px !important;
+  }
+  #home, #about, #cont, #qya{
+    font-size: 13px ;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedorAlumno,
+  .contenedorDocente {
+    @include contenedorS;
+  }
+
+
+  
+ #titulo h1 {
+    font-size: 50px !important;
+  }
+  .img-avatar {
+    height: 150px !important;
+  }
+  #contenedorPrincipal {
+    padding-top: 40px;
+  }
+  @include navicons;
+}
+@media (max-width: 576px) {
+  .contenedorAlumno,
+  .contenedorDocente {
+    @include contenedorSS;
+  }
+  #titulo h1 {
+    font-size: 30px !important;
+  }
+  nav ul li {
+    font-size: 5px;
+  }
+}

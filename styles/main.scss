@@ -1,0 +1,61 @@
+@import "../styles/variables.scss";
+@import "../styles/navbar.scss";
+@import "../styles/mediaq.scss";
+@import "../styles/contenedoresL.scss";
+
+//estandar titulos <1280
+
+h1 {
+  font-size: 90px !important;
+  text-align: center;
+  padding-top: 40px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600 !important;
+}
+h2 {
+  font-size: 30px !important;
+}
+
+#contenedorPrincipal {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorAlumno {
+  border: 1px solid $verde-alumno;
+}
+.contenedorDocente {
+  border: 1px solid $rojo-maestro;
+}
+
+.img-avatar {
+  height: 350px;
+}
+.btnlog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 25%;
+}
+p {
+  text-align: justify;
+}
+#contacto {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactoform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#abouts {
+  padding-bottom: 30vh;
+  font-size: 18px;
+}

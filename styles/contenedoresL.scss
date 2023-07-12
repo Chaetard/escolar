@@ -1,0 +1,26 @@
+@mixin contenedorG {
+  height: 500px;
+  width: 500px;
+}
+@mixin contenedorM {
+  height: 500px;
+  width: 400px;
+  
+}
+@mixin contenedorMS {
+    height: 500px;
+    width: 330px;
+   
+}
+@mixin contenedorS {
+    height: 300px;
+    width: 500px;
+    margin-bottom: 10px;
+    
+}
+@mixin contenedorSS {
+    height: 300px;
+    width: 340px;
+    margin-bottom: 10px;
+    
+}

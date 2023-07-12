@@ -1,0 +1,3101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/icons8-school-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/panel-usuarios.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid text-center fixed-top" id="navbartop">
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+
+
+                <button id="miescolar" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Mi
+                    Escolar</button>
+
+
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">DAVID ALEJANDRO FONSECA HERNANDEZ
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="curptop">CURP NJFS78DSD8F283</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="activo">ACTIVO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">2-A</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Materias</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#espanol">Español </a>
+                                <a class="dropdown-item" href="#matematicas">Matematicas </a>
+                                <a class="dropdown-item" href="#force">Formacion Civica y Etica</a>
+                                <a class="dropdown-item" href="#ciencias">Ciencias</a>
+                                <a class="dropdown-item" href="#geografia">Geografia</a>
+                                <a class="dropdown-item" href="#historia">Historia</a>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="../index.html" class="btn btn-danger"> Salir</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Mi Escolar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p style="font-size: 20px;">Mi Escolar Se encuentra en una version temprana por lo que puede experimentar
+                Errores, Cualquier Incombeniente comunicarse con el servicio de <a href="#">asistencia</a></p>
+
+            <ul>
+                <li><a href="#espanol">Español</a></li>
+                <li><a href="#matematicas">Matematicas</a></li>
+                <li><a href="#ciencias">Ciencias</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#force">Formacion Civica</a></li>
+                <li><a href="#geografia">Geografia</a></li>
+                <li><a href="#ingles">Ingles</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-center" id="contenedor">
+        <div class="row">
+            <div class="col-12">
+                <h1>Informacion General del Estudiante</h1>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Informacion del Estudiante</h2>
+                <div class="estudiantem">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://us.123rf.com/450wm/yupiramos/yupiramos1705/yupiramos170514523/77978477-dise%C3%B1o-gr%C3%A1fico-del-ejemplo-del-vector-del-icono-del-perfil-del-hombre-joven.jpg?ver=6"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">DAVID ALEJANDRO FONSECA HERNANDEZ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="estudiantem">
+                    <ul style="text-align: left;">
+
+                        <li>Grado Escolar: 2-A</li>
+                        <li>CURP NJFS78DSD8F283</li>
+                        <li>Promedio General 8.5</li>
+                        <li>Promedio Total: 6.3</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <h2>Datos Generales de Las Materias</h2>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Español
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+
+                                <ul style="text-align: left;">
+                                    <li>Asistencias: 34</li>
+                                    <li>Puntos Extras: 2</li>
+                                    <li>Promedio: 97</li>
+                                    <li>Notas: Ninguna Pendiente</li>
+                                    <li>Tareas Pendientes: 1</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Matematicas
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul style="text-align: left;">
+                                    <li>Asistencias: 34</li>
+                                    <li>Puntos Extras: 2</li>
+                                    <li>Promedio: 97</li>
+                                    <li>Notas: Ninguna Pendiente</li>
+                                    <li>Tareas Pendientes: 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Ciencias
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul style="text-align: left;">
+                                    <li>Asistencias: 34</li>
+                                    <li>Puntos Extras: 2</li>
+                                    <li>Promedio: 97</li>
+                                    <li>Notas: Ninguna Pendiente</li>
+                                    <li>Tareas Pendientes: 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-four" aria-expanded="false" aria-controls="flush-four">
+                                Historia
+                            </button>
+                        </h2>
+                        <div id="flush-four" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul style="text-align: left;">
+                                    <li>Asistencias: 34</li>
+                                    <li>Puntos Extras: 2</li>
+                                    <li>Promedio: 97</li>
+                                    <li>Notas: Ninguna Pendiente</li>
+                                    <li>Tareas Pendientes: 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-five" aria-expanded="false" aria-controls="flush-five">
+                                Formacion Civica
+                            </button>
+                        </h2>
+                        <div id="flush-five" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul style="text-align: left;">
+                                    <li>Asistencias: 34</li>
+                                    <li>Puntos Extras: 2</li>
+                                    <li>Promedio: 97</li>
+                                    <li>Notas: Ninguna Pendiente</li>
+                                    <li>Tareas Pendientes: 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-six" aria-expanded="false" aria-controls="flush-six">
+                                Geografia
+                            </button>
+                        </h2>
+                        <div id="flush-six" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul style="text-align: left;">
+                                    <li>Asistencias: 34</li>
+                                    <li>Puntos Extras: 2</li>
+                                    <li>Promedio: 97</li>
+                                    <li>Notas: Ninguna Pendiente</li>
+                                    <li>Tareas Pendientes: 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-seven" aria-expanded="false" aria-controls="flush-seven">
+                                Ingles
+                            </button>
+                        </h2>
+                        <div id="flush-seven" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul style="text-align: left;">
+                                    <li>Asistencias: 34</li>
+                                    <li>Puntos Extras: 2</li>
+                                    <li>Promedio: 97</li>
+                                    <li>Notas: Ninguna Pendiente</li>
+                                    <li>Tareas Pendientes: 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Progreso Escolar</h2>
+                <ul style="text-align: left;">
+                    <li>
+                        Total del año
+                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="75">
+                            <div class="progress-bar bg-success" style="width: 75%">75%</div>
+                        </div>
+                    </li>
+                    <br>
+                    <h1 style="font-size: 40px !important;">Promedios</h1>
+                    <li>Español
+                    </li>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="95">
+                        <div class="progress-bar bg-info text-dark" style="width: 95%">95%</div>
+                    </div>
+                    <li>Matematicas 20</li>
+                    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="95">
+                        <div class="progress-bar bg-danger" style="width: 95%">95%</div>
+                    </div>
+                    <li>Ciencias 27</li>
+                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="95">
+                        <div class="progress-bar bg-warning" style="width: 95%">95%</div>
+                    </div>
+                    <li>Historia 32</li>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="95">
+                        <div class="progress-bar bg-info text-dark" style="width: 95%">95%</div>
+                    </div>
+                    <li>Formacion Civica 10 </li>
+                    <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="95">
+                        <div class="progress-bar  bg-danger" style="width: 95%">95%</div>
+                    </div>
+                    <li>Geografia 26</li>
+                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="95">
+                        <div class="progress-bar bg-warning" style="width: 95%">95%</div>
+                    </div>
+                    <li>Ingles 26</li>
+                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="95">
+                        <div class="progress-bar bg-warning" style="width: 95%">95%</div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-12">
+                <h1>Estado Actual</h1>
+            </div>
+        </div>
+        <div class="row bg-warning">
+            <div class="col-md-4">
+                <h6>Clase</h6>
+
+
+                <span id="estados">EN CLASE <div class="spinner-border text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div></span>
+
+                <span id="estadom">
+                    HISTORIA 2
+                </span>
+
+
+
+            </div>
+            <div class="col-md-3">
+                <h6>Docente</h6>
+
+                <div class="alert alert-success" role="alert">
+                    <span id="estadod">
+                        Pedro Daniel Gonzales Camarena
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <h6>Horario</h6>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Horario
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Lunes</th>
+                                            <th>Martes</th>
+                                            <th>Miercoles</th>
+                                            <th>Jueves</th>
+                                            <th>Viernes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-primary">
+                                            <td>7 am</td>
+                                            <td>Matematicas</td>
+                                            <td>Ingles</td>
+                                            <td>Español</td>
+                                            <td>Matematicas</td>
+                                            <td>Geografia</td>
+                                        </tr>
+                                        <tr class="table-success">
+                                            <td>8 am</td>
+                                            <td>Matematicas</td>
+                                            <td>Ingles</td>
+                                            <td>Español</td>
+                                            <td>Matematicas</td>
+                                            <td>Geografia</td>
+                                        </tr>
+                                        <td>9 am</td>
+                                        <td>Español</td>
+                                        <td>Ingles</td>
+                                        <td>Matematicas</td>
+                                        <td>Matematicas</td>
+                                        <td>Geografia</td>
+                                        </tr>
+                                        <tr class="table-success">
+                                            <td>10am</td>
+                                            <td>Español</td>
+                                            <td>Ciencias</td>
+                                            <td>Matematicas</td>
+                                            <td>Formacion Civica</td>
+                                            <td>Español</td>
+                                        </tr>
+
+                                        <tr class="table-warning">
+                                            <td>10:30 am</td>
+                                            <td>Receso</td>
+                                            <td>Receso</td>
+                                            <td>Receso</td>
+                                            <td>Receso</td>
+                                            <td>Receso</td>
+
+                                        </tr>
+                                        <tr class="table-primary">
+                                            <td>11am</td>
+                                            <td>Historia</td>
+                                            <td>Ciencias</td>
+                                            <td>Historia</td>
+                                            <td>Formacion Civica</td>
+                                            <td>Español</td>
+                                        </tr>
+                                        <tr class="table-success">
+                                            <td>12am</td>
+                                            <td>Historia</td>
+                                            <td>Geografia</td>
+                                            <td>Historia</td>
+                                            <td>Ingles</td>
+                                            <td>Español</td>
+                                        </tr>
+                                        <tr class="table-primary">
+                                            <td>1pm</td>
+                                            <td>Formacion Civica</td>
+                                            <td>Geografia</td>
+                                            <td>Ciencias</td>
+                                            <td>Ingles</td>
+                                            <td>Tutorias</td>
+                                        </tr>
+                                        <tr class="table-success">
+                                            <td>2pm</td>
+                                            <td>Formacion Civica</td>
+                                            <td>Geografia</td>
+                                            <td>Ciencias</td>
+                                            <td>Ingles</td>
+                                            <td>Tutorias</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row" id="espanol">
+
+            <h1 class="col-12">Español</h1>
+            <div class="row">
+
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h6>Asistencias <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                        </svg></h6>
+
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Asistencias
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">34</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal1">
+                                Faltas
+                            </button>
+                    
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Faltas</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Falta</th>
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                    
+                        <div class="col-6">0</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">
+                                Retardos
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Retardo</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Retardo</th>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Tareas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list-task" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                            <path
+                                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                            <path fill-rule="evenodd"
+                                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                        </svg></h6>
+                    <div class="row tareascont">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Calificacion</th>
+                                    <th>Entrego</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>17/03/2023</td>
+                                    <td>0</td>
+                                    <td>No Entrego</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+
+
+
+                    <h6>Notas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                            <path
+                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                        </svg></h6>
+                    <div class="notascont">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="matematicas">
+
+            <h1 class="col-12">Matematicas</h1>
+            <div class="row">
+
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h6>Asistencias <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                        </svg></h6>
+
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Asistencias
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">34</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6 ">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Faltas
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Retardos
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Tareas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list-task" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                            <path
+                                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                            <path fill-rule="evenodd"
+                                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                        </svg></h6>
+                    <div class="row tareascont">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Calificacion</th>
+                                    <th>Entrego</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>17/03/2023</td>
+                                    <td>0</td>
+                                    <td>No Entrego</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+
+
+
+                    <h6>Notas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                            <path
+                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                        </svg></h6>
+                    <div class="notascont">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="force">
+
+            <h1 class="col-12">Formacion Civica</h1>
+            <div class="row">
+
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h6>Asistencias <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                        </svg></h6>
+
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Asistencias
+                            </button>
+
+                            
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">34</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6 ">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Faltas
+                            </button>
+
+                            
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Retardos
+                            </button>
+
+                           
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Tareas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list-task" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                            <path
+                                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                            <path fill-rule="evenodd"
+                                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                        </svg></h6>
+                    <div class="row tareascont">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Calificacion</th>
+                                    <th>Entrego</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>17/03/2023</td>
+                                    <td>0</td>
+                                    <td>No Entrego</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+
+
+
+                    <h6>Notas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                            <path
+                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                        </svg></h6>
+                    <div class="notascont">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="historia">
+
+            <h1 class="col-12">Historia</h1>
+            <div class="row">
+
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h6>Asistencias <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                        </svg></h6>
+
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Asistencias
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">34</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6 ">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Faltas
+                            </button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Retardos
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Tareas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list-task" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                            <path
+                                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                            <path fill-rule="evenodd"
+                                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                        </svg></h6>
+                    <div class="row tareascont">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Calificacion</th>
+                                    <th>Entrego</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>17/03/2023</td>
+                                    <td>0</td>
+                                    <td>No Entrego</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+
+
+
+                    <h6>Notas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                            <path
+                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                        </svg></h6>
+                    <div class="notascont">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="ciencias">
+
+            <h1 class="col-12">Ciencias</h1>
+            <div class="row">
+
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h6>Asistencias <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                        </svg></h6>
+
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Asistencias
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">34</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6 ">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Faltas
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Retardos
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Tareas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list-task" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                            <path
+                                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                            <path fill-rule="evenodd"
+                                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                        </svg></h6>
+                    <div class="row tareascont">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Calificacion</th>
+                                    <th>Entrego</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>17/03/2023</td>
+                                    <td>0</td>
+                                    <td>No Entrego</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+
+
+
+                    <h6>Notas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                            <path
+                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                        </svg></h6>
+                    <div class="notascont">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="ingles">
+
+            <h1 class="col-12">Ingles</h1>
+            <div class="row">
+
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h6>Asistencias <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                        </svg></h6>
+
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Asistencias
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">34</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6 ">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Faltas
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Retardos
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Tareas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list-task" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                            <path
+                                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                            <path fill-rule="evenodd"
+                                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                        </svg></h6>
+                    <div class="row tareascont">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Calificacion</th>
+                                    <th>Entrego</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>17/03/2023</td>
+                                    <td>0</td>
+                                    <td>No Entrego</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+
+
+
+                    <h6>Notas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                            <path
+                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                        </svg></h6>
+                    <div class="notascont">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="geografia">
+
+            <h1 class="col-12">Geografia</h1>
+            <div class="row">
+
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h6>Asistencias <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                        </svg></h6>
+
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Asistencias
+                            </button>
+
+                            
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">34</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6 ">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Faltas
+                            </button>
+
+                          
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                    <div class="row asistenciasbtn">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Retardos
+                            </button>
+
+                            
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Asistencias</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table id="tabla">
+                                                <tr>
+                                                    <th>Dia</th>
+                                                    <th>Asistencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>14/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>16/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>12/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>20/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>26/02/2023</th>
+                                                    <th>SI</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">0</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Tareas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list-task" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                            <path
+                                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                            <path fill-rule="evenodd"
+                                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                        </svg></h6>
+                    <div class="row tareascont">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Calificacion</th>
+                                    <th>Entrego</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>17/03/2023</td>
+                                    <td>0</td>
+                                    <td>No Entrego</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                                <tr class="table-primary">
+                                    <td>16/02/2023</td>
+                                    <td>10</td>
+                                    <td>SI</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+
+
+
+                    <h6>Notas <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                            <path
+                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                        </svg></h6>
+                    <div class="notascont">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">nota</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

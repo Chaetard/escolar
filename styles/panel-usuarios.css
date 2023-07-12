@@ -1,0 +1,90 @@
+#navbartop {
+  font-size: 20px;
+}
+
+#curptop {
+  font-weight: 700;
+}
+
+#activo {
+  color: green;
+  font-weight: 700;
+}
+#miescolar {
+  font-family: "Mulish", sans-serif;
+  font-size: 30px;
+  padding-right: 10px !important;
+}
+h5 {
+  font-family: "Mulish", sans-serif;
+  font-size: 50px !important;
+}
+#contenedor {
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 50px !important;
+  font-family: "Mulish", sans-serif;
+}
+.estudiantem{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    
+}
+.estudiantem ul li{
+    list-style: none;
+    padding-top: 5px;
+}
+
+
+
+.container-green .container{
+    background-color: green;
+}
+
+#tabla{
+    width: 100%;
+    text-align: left;
+}
+.asistenciasbtn{
+    padding-top: 10px;
+}
+
+.tareascont{
+    width: 100%; /* Ancho del contenedor */
+    height: 600px; /* Altura del contenedor */
+    overflow: auto; /* Habilitar el scroll interno */
+    border: 1px solid #ccc; /* Opcional: agregar borde para visualización */
+  }
+
+  .notascont{
+    width: 100%; /* Ancho del contenedor */
+    height: 600px; /* Altura del contenedor */
+    overflow: auto; /* Habilitar el scroll interno */
+    border: 1px solid #ccc; /* Opcional: agregar borde para visualización */
+  }
+ 
+  .notascont  .card{
+   margin: 10px;
+  }
+  h6{
+    font-size: 30px !important;
+  }
+  #estados{
+    font-size: 20px;
+    color: green;
+    font-weight: 700;
+  }
+  #estadom{
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    background-color: gray;
+    border-radius: 10px;
+  }
+  #estadod{
+    font-size: 20px
+  }

@@ -1,0 +1,16 @@
+@mixin navicons {
+
+  #home,
+  #about,
+  #qya,
+  #cont {
+    width: 35px !important;
+    height: 35px !important;
+    background-size: cover;
+    color: transparent;
+    font-size: 0
+  }
+
+ 
+ 
+}
