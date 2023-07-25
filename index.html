@@ -26,74 +26,72 @@
 <body>
 	<nav class="container-fluid text-center">
 		<div class="row">
-			<div class="col "><a href="#" id="home" style="color: black;">Mi Escolar <img
-						src="img/home-filled-svgrepo-com.svg" alt=""></a></div>
-			<div class="col"><a href="#abouts" id="about" style="color: black;">Acerca del Sitio <img
-						src="img/info-filled-svgrepo-com.svg" alt=""></a></div>
-			<div class="col"><a href="#preguntas" id="qya" style="color: black;">Preguntas Frecuentes <img
-						src="img/inquiry-filled-svgrepo-com.svg" alt=""></a></div>
-			<div class="col"><a href="#contactoform" id="cont" style="color: black;">Contacto <img
-						src="img/phone-filled-svgrepo-com.svg" alt=""></a></div>
+			<div class="col iconocomponente"><a href="#" id="home" class="iconocomponente" style="color: black;"> <img
+						src="img/education.png" alt="" id="iconprincimenu"><div class="textnav"> Mi Escolar</div> </a></div>
+			<div class="col iconocomponente"><a href="#abouts" id="about" class="iconocomponente" style="color: black;">Acerca del Sitio 
+				<!-- <img src="img/info-filled-svgrepo-com.svg" alt=""> -->
+			
+			</a></div>
+			<div class="col"><a href="#preguntas" id="qya" style="color: black;">Preguntas Frecuentes
+				 <!-- <img src="img/inquiry-filled-svgrepo-com.svg" alt=""> -->
+						</a></div>
+			<div class="col"><a href="#contactoform" id="cont" style="color: black;">Contacto
+				 <!-- <img src="img/phone-filled-svgrepo-com.svg" alt=""> -->
+			</a></div>
 
 		</div>
-
-
-
-
-
-
-
 	</nav>
 
-	<div id="titulo">
-		<h1> Bienvenido a Mi Escolar</h1>
-	</div>
-	<main class="container text-center" id="contenedorPrincipal">
+	<!-- <div id="titulo">
+		<h1> Mi Escolar</h1>
+	</div> -->
+	<main class="container-fluid d-flex" id="contenedorPrincipal">
+		<div class="col-6">
+			<h1>Mi Escolar</h1>
+			<p style="margin: 80px; margin-top: 0;">
+				Mi Escolar es una plataforma escolar innovadora diseñada para facilitar la gestión y el
+					seguimiento de las actividades y asistencias de los alumnos. Con un enfoque centrado en la
+					eficiencia y la organización, Mi Escolar ofrece a las instituciones educativas una solución
+					integral y detallada para mantener un registro preciso de la información académica de los
+					estudiantes.
+			</p>
+		</div>
 
 
 
-
-
-
-		<div>
-
-
-
-
-			<div class="row">
-
-				<div class="col  d-flex" style="justify-content: center;">
-					<div class="contenedorAlumno">
-						<h2>Iniciar Sesion Como Alumno</h2>
-						<img src="img/reading.png" alt="" class="img-avatar">
-						<div class="btnlog">
-							<a href="pages/autenticacion.html" class="btn btn-outline-success">Iniciar Session</a>
-						</div>
-
-					</div>
+		<div class="col-3  d-flex" style="justify-content: center;">
+			<div class="contenedorAlumno">
+				<h2>Iniciar Sesion Como Tutor</h2>
+				<img src="img/reading.png" alt="" class="img-avatar">
+				<div class="btnlog">
+					<a href="pages/autenticacion.html" class="btn btn-outline-success">Iniciar Sesion</a>
 				</div>
 
-				<div class="col  d-flex" style="justify-content: center;">
-					<div class="contenedorDocente">
-						<h2>Iniciar Sesion Como Maestro</h2>
-						<img src="img/translator.png" alt="" class="img-avatar">
-						<div class="btnlog">
-							<a href="pages/login-user.html" class="btn btn-outline-danger">Iniciar Session</a>
-						</div>
-
-					</div>
-				</div>
 			</div>
 		</div>
+
+		<div class="col-3  d-flex" style="justify-content: center;">
+			<div class="contenedorDocente">
+				<h2>Iniciar Sesion Como Maestro</h2>
+				<img src="img/translator.png" alt="" class="img-avatar">
+				<div class="btnlog">
+					<a href="pages/login-user.html" class="btn btn-outline-danger">Iniciar Sesion</a>
+				</div>
+
+			</div>
+		</div>
+
+
+
 	</main>
 
 
 
 
-	<section id="abouts" class="container">
-		<h1 style="text-align: left;">Acerca de </h1>
+	<section id="abouts" class="container/fluid">
+		<h1 style="text-align: left; padding-left: 100px;">Acerca de </h1>
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-8" style="padding-left: 100px;">
 				<p>
 					Mi Escolar es una plataforma escolar innovadora diseñada para facilitar la gestión y el
 					seguimiento de las actividades y asistencias de los alumnos. Con un enfoque centrado en la
@@ -125,22 +123,23 @@
 					escuela y el hogar.
 				</p>
 			</div>
-			<div class="col-md-4 d-flex" style="justify-content: center; align-items: center;">
+			<div class="col-md-4 d-flex" style="justify-content: center; ">
 
-				<img  src="https://images.adsttc.com/media/images/5ddf/acb9/3312/fdb8/d300/011b/newsletter/_A7R0117_HUNDVEN-CLEMENTS_PHOTOGRAPHY.jpg?1574939805"
-					alt="edificio de secundaria" height="200px">
+				<img src="img/idea.png"
+					alt="edificio de secundaria" height="400px">
 
 			</div>
 
 		</div>
 	</section>
 
-	<section class="container" style="padding-top: 50px;">
+	<section class="container"  id="preguntas" style="padding-top: 50px;">
 		<div class="preguntas">
 
 
-			<div class="row" >
-				<h2 style="padding-bottom: 10px; text-align: center; font-size: 30px;" id="preguntas" class="col"> Preguntas Frecuentes
+			<div class="row">
+				<h2 style="padding-bottom: 10px; text-align: center; font-size: 30px;"  class="col">
+					Preguntas Frecuentes
 				</h2>
 
 

@@ -1,36 +1,45 @@
 nav {
   position: fixed;
   width: 100%;
-  height: 40px;
-  background-color: rgb(76, 212, 139);
+  height: 50px;
   border-radius: 0 0 30px 30px;
-  border: 2px solid black;
-  border-top: 0px;
+  background-color: #6C95D2;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 nav a {
-  font-size: 20px;
+  transition: 0.4s;
+  font-size: 30px;
   text-decoration: none;
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+}
+nav a:hover {
+  transition: 0.4s;
+  background-color: #41659c;
 }
 
 .contenedorAlumno,
 .contenedorDocente {
   height: 500px;
-  width: 500px;
+  width: 350px;
   border-radius: 10px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .contenedorAlumno,
   .contenedorDocente {
     height: 500px;
-    width: 400px;
+    width: 300px;
+  }
+  .img-avatar {
+    height: 300px !important;
   }
 }
 @media (max-width: 992px) {
   .contenedorAlumno,
   .contenedorDocente {
     height: 500px;
-    width: 330px;
+    width: 270px;
   }
   .img-avatar {
     height: 300px !important;
@@ -43,7 +52,7 @@ nav a {
   .contenedorAlumno,
   .contenedorDocente {
     height: 300px;
-    width: 500px;
+    width: 200px;
     margin-bottom: 10px;
   }
   #titulo h1 {
@@ -89,21 +98,39 @@ h1 {
 }
 
 h2 {
-  font-size: 30px !important;
+  font-size: 20px !important;
+  text-align: center;
 }
 
 #contenedorPrincipal {
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-top: 50px;
 }
 
 .contenedorAlumno {
-  border: 1px solid rgb(31, 177, 31);
+  border: 2px solid rgb(31, 177, 31);
 }
 
 .contenedorDocente {
-  border: 1px solid rgb(167, 15, 15);
+  border: 2px solid rgb(167, 15, 15);
+}
+
+#iconprincimenu {
+  height: 45px;
+}
+
+.textnav {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.iconocomponente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-avatar {

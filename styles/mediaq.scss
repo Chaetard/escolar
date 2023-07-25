@@ -6,10 +6,13 @@
   @include contenedorG;
   border-radius: 10px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .contenedorAlumno,
   .contenedorDocente {
     @include contenedorM;
+  }
+  .img-avatar {
+    height: 300px !important;
   }
 }
 
