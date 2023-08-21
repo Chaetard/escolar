@@ -1,0 +1,24 @@
+@import "../styles/variables.scss";
+@import "aside.scss";
+
+main {
+ 
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  grid-template-rows: 1fr 10fr;
+}
+aside {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+nav{
+    display: flex;
+    @import "navdocente.scss" ;
+}
+
+#contenidoPrincipal{
+    background-color: chartreuse;
+}
+

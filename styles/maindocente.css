@@ -1,0 +1,33 @@
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  grid-template-rows: 1fr 10fr;
+}
+
+aside {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+nav {
+  display: flex;
+}
+nav h1 {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 50px;
+}
+
+#contenidoPrincipal {
+  background-color: chartreuse;
+}
+
+/*# sourceMappingURL=maindocente.css.map */
