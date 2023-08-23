@@ -1,6 +1,59 @@
-h1 {
-  font-size: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Space+Grotesk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Space+Grotesk:wght@700&display=swap");
+#aside {
+  border-left: 10px solid rgb(205, 3, 3);
+}
+#aside h1 {
+  font-size: 60px;
   text-align: center;
+}
+#aside ul {
+  margin-top: 10px;
+}
+#aside ul .opciones {
+  padding-left: 35px;
+}
+#aside ul #home {
+  font-size: 35px;
+}
+#aside ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 15px 0;
+  font-family: "Outfit", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.principalarriba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.principalarriba .contenedor_centralA {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 15px;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 80%;
+  text-align: left;
+}
+.principalarriba .contenedor_centralA h1 {
+  font-size: 45px;
+}
+.principalarriba .contenedor_centralA ul li {
+  list-style: none;
+  padding-left: 10px;
+  font-family: "Outfit", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.principalabajo {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  height: 55vh;
+  background-color: red;
 }
 
 main {
@@ -17,17 +70,23 @@ aside {
 
 nav {
   display: flex;
+  border-radius: 0 0 30px 30px;
+  border: 4px solid rgb(205, 3, 3);
+  border-top: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  justify-content: center;
+  margin: 0 80px 0 80px;
 }
 nav h1 {
-  font-size: 30px;
+  font-size: 35px;
   display: flex;
   align-items: center;
   margin: 0;
-  padding-left: 50px;
 }
 
 #contenidoPrincipal {
-  background-color: chartreuse;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
 }
 
 /*# sourceMappingURL=maindocente.css.map */
