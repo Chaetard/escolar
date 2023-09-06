@@ -24,6 +24,22 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+.perfil {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.perfil li {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.menuicons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .principalarriba {
   display: flex;
   align-items: center;
@@ -33,9 +49,9 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 15px;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 20px;
-  width: 80%;
+  width: 70%;
   text-align: left;
 }
 .principalarriba .contenedor_centralA h1 {
@@ -49,11 +65,29 @@
 }
 
 .principalabajo {
-  display: flex;
   overflow: auto;
   width: 100%;
   height: 55vh;
-  background-color: red;
+}
+.principalabajo .classContainers {
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  height: 30vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 2px solid black;
+  position: relative;
+}
+.principalabajo .classContainers ul li {
+  text-align: left;
+  list-style: none;
+}
+.principalabajo .classContainers img {
+  width: 43%;
 }
 
 main {
@@ -68,25 +102,18 @@ aside {
   grid-row-end: 3;
 }
 
-nav {
-  display: flex;
-  border-radius: 0 0 30px 30px;
-  border: 4px solid rgb(205, 3, 3);
-  border-top: 0px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  justify-content: center;
-  margin: 0 80px 0 80px;
-}
-nav h1 {
-  font-size: 35px;
-  display: flex;
-  align-items: center;
-  margin: 0;
+nav:hover {
+  height: 80px;
+  width: 70vw;
+  background-color: white;
+  transition: 0.3s;
 }
 
 #contenidoPrincipal {
   display: grid;
   grid-template-rows: 1fr 1.5fr;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 /*# sourceMappingURL=maindocente.css.map */

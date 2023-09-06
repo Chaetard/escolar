@@ -26,3 +26,19 @@
     }
   }
 }
+.perfil{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  li{
+   list-style: none;
+   padding: 0 !important;
+  }
+}
+.menuicons{
+   
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+}
