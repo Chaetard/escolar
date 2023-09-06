@@ -1,4 +1,4 @@
-# escolar
+# Mi Escolar
 Pagina web Mi Escolar, Seguimiento del aprovechamiento escolar en instituciones educativas
 
 # Instrucciones para Ejecutar el Proyecto
