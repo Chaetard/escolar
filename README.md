@@ -11,9 +11,13 @@ Asegúrate de tener instalado [Sass](https://sass-lang.com/install) en tu sistem
 
 ```bash
 sass --version
+
 cd ruta/del/proyecto
+
 sass main.scss main.css
+
 sass maindocente.scss maindocente.css
+```
 
 Puedes agregar --watch al comando `sass maindocente.scss maindocente.css --watch` para mantener el observer de sass
 
