@@ -2,6 +2,7 @@
 @import "aside.scss";
 @import "contenidoprincipal.scss";
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Space+Grotesk:wght@700&display=swap");
+@import "listasnav.scss";
 
 main {
   height: 100vh;
@@ -14,14 +15,6 @@ aside {
   grid-row-end: 3;
 }
 
-
-
-nav:hover{
-  height: 80px;
-  width: 70vw;
-  background-color: white;
-  transition: .3s;
-}
 #contenidoPrincipal {
   display: grid;
   grid-template-rows: 1fr 1.5fr;

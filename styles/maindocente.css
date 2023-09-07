@@ -4,7 +4,7 @@
   border-left: 10px solid rgb(205, 3, 3);
 }
 #aside h1 {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 #aside ul {
@@ -63,6 +63,14 @@
   font-family: "Outfit", sans-serif;
   font-family: "Space Grotesk", sans-serif;
 }
+.principalarriba .contenedor_centralA ul li a {
+  text-decoration: none !important; /* Elimina el subrayado */
+  color: inherit !important; /* Utiliza el color heredado del elemento padre */
+}
+.principalarriba .contenedor_centralA li:hover {
+  color: red !important;
+  font-size: 104%;
+}
 
 .principalabajo {
   overflow: auto;
@@ -85,6 +93,7 @@
 .principalabajo .classContainers ul li {
   text-align: left;
   list-style: none;
+  font-family: "Outfit", sans-serif;
 }
 .principalabajo .classContainers img {
   width: 43%;
@@ -100,13 +109,6 @@ main {
 aside {
   grid-row-start: 1;
   grid-row-end: 3;
-}
-
-nav:hover {
-  height: 80px;
-  width: 70vw;
-  background-color: white;
-  transition: 0.3s;
 }
 
 #contenidoPrincipal {

@@ -1,6 +1,6 @@
 const dataTeacher = 
   {
-    name: "Jorge",
+    name: "Ana Sarahi Duran Altamirano",
     age: 30,
     country: "Mexico",
   };

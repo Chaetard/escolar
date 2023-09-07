@@ -20,6 +20,16 @@
       padding-left: 10px;
       font-family: "Outfit", sans-serif;
       font-family: "Space Grotesk", sans-serif;
+      a {
+        text-decoration: none !important; /* Elimina el subrayado */
+        color: inherit !important; /* Utiliza el color heredado del elemento padre */
+        
+      }
+      
+    }
+    li:hover{
+      color: red !important;
+      font-size: 104%;
     }
   }
 }
@@ -38,7 +48,6 @@
     background-position: center;
     background-repeat: no-repeat;
 
-
     border-radius: 10px;
     border: 2px solid black;
     position: relative;
@@ -47,11 +56,12 @@
       li {
         text-align: left;
         list-style: none;
+        font-family: "Outfit", sans-serif;
       }
     }
-    img{
+    img {
       width: 43%;
-      
     }
+     
   }
 }

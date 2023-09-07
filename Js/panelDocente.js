@@ -5,6 +5,17 @@ const mapaClases = classes.map((clase) => {
 const principalAbajo = document.getElementById("principalAbajo");
 
 function creadorClase(tamaño) {
+  const divmore = document.createElement("div");
+  divmore.innerHTML = `
+  <a style="text-decoration: none !important; color:blue;" href=""><div class="classContainers" style="display: flex; ">
+            
+  <img id="imgplus" height="80px" src="../img/plus-svgrepo-com.svg" alt="">
+<h1>Añadir Una Clase</h1>
+  </div>  </a>
+
+`;
+
+
   for (let i = 0; i < tamaño; i++) {
     const div = document.createElement("div");
 
@@ -16,11 +27,13 @@ function creadorClase(tamaño) {
     div.innerHTML = `
         
             <div class="classContainers" style="display: flex; background-image: url('');">
-                <img id="" src="${mapaClases[i].image}" alt="">
-
+            
+                <img id="" height="80px" src="${mapaClases[i].image}" alt="">
+                  
                 <ul>
-                    <li >ID: ${mapaClases[i].id}</li>
-                    <li >Nombre: ${mapaClases[i].name}</li>
+                    
+                   
+                   <h3>${mapaClases[i].name}</h3>
                     <li >Turno: ${mapaClases[i].shift}</li>
                     <li >Alumnos: ${mapaClases[i].alumCont}</li>
                     <li >Hora: ${mapaClases[i].schedule}</li>
@@ -33,6 +46,7 @@ function creadorClase(tamaño) {
 
     principalAbajo.appendChild(div);
   }
+  principalAbajo.appendChild(divmore);
 }
 creadorClase(mapaClases.length);
 
@@ -44,7 +58,6 @@ const contenedor_centralA = document.getElementById("contenedor_centralA");
 // Itera a través de los elementos y agrega el evento a cada uno
 for (let i = 0; i < elementosContainers.length; i++) {
   elementosContainers[i].addEventListener("click", () => {
-
     for (let j = 0; j < elementosContainers.length; j++) {
       elementosContainers[j].style.backgroundColor = "white";
     }
@@ -63,10 +76,11 @@ for (let i = 0; i < elementosContainers.length; i++) {
                     <h2>${mapaClases[i].schedule}   ${mapaClases[i].group} </h2>
                     <ul>
                         Menu
-                    <li>Panel General</li>
-                    <li>Lista De Alumnos</li>
-                    <li>Analisis Estadistico</li>
-                    <li>Panel De Notas</li>
+                    <li> <a href=""> Panel General </a>  </li>
+                    <li> <a href=""> Lista De Alumnos </a></li>
+                    <li> <a href=""> Analisis Estadistico </a></li>
+                    <li> <a href=""> Panel De Notas </a></li>
+                    
                         
                     </ul>
                     <div >
@@ -78,6 +92,9 @@ for (let i = 0; i < elementosContainers.length; i++) {
 
                 </div> 
                 <p>${mapaClases[i].days}</p>
+                <a href=""><button type="button" class="btn btn-success">Ir a la Clase</button> <a/>
+                
+                
                 `;
 
       estado = false;
