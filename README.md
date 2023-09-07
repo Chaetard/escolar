@@ -15,9 +15,11 @@ sass --version
 ## Para Ejecutar los Archivos SASS de el Proyecto
 ```bash
 cd ruta/del/proyecto
-
+```
+```bash
 sass main.scss main.css
-
+```
+```bash
 sass maindocente.scss maindocente.css
 ```
 
