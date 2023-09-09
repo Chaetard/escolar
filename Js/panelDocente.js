@@ -26,7 +26,7 @@ function creadorClase(tamaño) {
 
     div.innerHTML = `
         
-            <div class="classContainers" style="display: flex; background-image: url('');">
+            <div class="classContainers" style="display: flex;">
             
                 <img id="" height="80px" src="${mapaClases[i].image}" alt="">
                   
@@ -70,7 +70,7 @@ for (let i = 0; i < elementosContainers.length; i++) {
        
                     
                     <h1>
-                    ${mapaClases[i].name}
+                    ${mapaClases[i].name} ${mapaClases[i].id}
                     </h1>
                    
                     <h2>${mapaClases[i].schedule}   ${mapaClases[i].group} </h2>

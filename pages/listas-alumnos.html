@@ -11,9 +11,9 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/maindocente.css">
 
-    <!-- <script src="../Js/dataClass.js" defer></script>
     <script src="../Js/dataTeacher.js" defer></script>
-    <script src="../Js/panelDocente.js" defer></script> -->
+    <script src="../Js/dataStudent.js" defer></script>
+    <script src="../Js/panelListas.js" defer></script>
 
     <title>Lista de Alumnos</title>
 </head>
@@ -47,13 +47,49 @@
         </aside>
 
 
-        <div class="d-flex" >
+        <div class="d-flex" id="navbusqueda">
 
             <h1>Busqueda de Alumnos</h1>
-            <input type="text" name="" id="" >
+            <input type="text" name="" id="">
+
+
+            <div id="seleccion">
+
+
+                <label for="frutas">Filtro:</label>
+                <select id="frutas" name="frutas">
+                    <option value="manzana">Nombre Alumno</option>
+                    <option value="banana">Clase</option>
+                    <option value="uva">Grupo</option>
+                    <option value="pera">Grado</option>
+
+                </select>
+            </div>
+
 
         </div>
-        <div "></div>
+        <div class="text-center ">
+
+            <table class="tablas">
+                <tr id="indiceTabla">
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Grado y Grupo</td>
+                    <td>Materia</td>
+                </tr>
+
+
+
+            </table>
+
+            
+            <div id="alumnosAdd" >
+
+            </div>
+
+
+        </div>
+
 
 
 

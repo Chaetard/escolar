@@ -99,6 +99,60 @@
   width: 43%;
 }
 
+input {
+  height: 50px;
+  width: 30vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+#navbusqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#seleccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  font-size: 20px;
+  border: 3px solid green;
+  height: 50px;
+  width: 16vw;
+  border-radius: 10px;
+}
+
+.tablas {
+  margin-left: 10%;
+  width: 80%;
+}
+.tablas #indiceTabla {
+  font-size: 20px;
+  border: 3px solid green;
+  width: 25%;
+}
+
+#alumnosAdd {
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#alumnosAdd table {
+  width: 80% !important;
+  margin-left: 10%;
+  background-color: green;
+}
+#alumnosAdd table td {
+  width: 25%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
 main {
   height: 100vh;
   display: grid;
