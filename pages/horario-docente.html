@@ -11,11 +11,11 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/maindocente.css">
 
+    <!-- <script src="../Js/dataClass.js" defer></script>
     <script src="../Js/dataTeacher.js" defer></script>
-    <script src="../Js/dataStudent.js" defer></script>
-    <script src="../Js/panelListas.js" defer></script>
+    <script src="../Js/panelDocente.js" defer></script> -->
 
-    <title>Lista de Alumnos</title>
+    <title>Panel Docente</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <ul>
                     <li id="home">Inicio</li>
                     <li class="opciones">Configuraciones</li>
-                    <li class="opciones" style="color: red;">Lista De Alumnos</li>
+                    <li class="opciones">Lista De Alumnos</li>
                     <li class="opciones">Horario</li>
                     <li class="opciones">Reporte General</li>
                 </ul>
@@ -47,48 +47,47 @@
         </aside>
 
 
-        <div class="d-flex" id="navbusqueda">
+        <div class="text-center" id="contenidoPrincipal">
 
-            <h1>Busqueda de Alumnos</h1>
-            <input type="text" name="" id="busqueda">
+                <h1>Horario</h1>
+                <table>
 
-
-            <div id="seleccion">
-
-
-                <label for="frutas">Filtro:</label>
-                <select id="frutas" name="frutas">
-                    <option value="manzana">Nombre Alumno</option>
-                    <option value="banana">Clase</option>
-                    <option value="uva">Grupo</option>
-                    <option value="pera">Grado</option>
-
-                </select>
-            </div>
-
+                    <tr>
+                        <td>Lunes</td>
+                        <td>Martes</td>
+                        <td>Miercoles</td>
+                        <td>Jueves</td>
+                        <td>Viernes</td>
+                    </tr>
+    
+                    <tr>
+                        <td>8000</td>
+                        <td>8000</td>
+                        <td>8000</td>
+                        <td>8000</td>
+                        <td>8000</td>
+                    </tr>
+                    <tr>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                    </tr>
+    
+                </table>
 
         </div>
-        <div class="text-center ">
-
-            <table class="tablas">
-                <tr id="indiceTabla">
-                    <td>Nombre</td>
-                    <td>Apellido</td>
-                    <td>Grado y Grupo</td>
-                    <td>Materia</td>
-                </tr>
 
 
+        
 
-            </table>
+        <!-- <div id="principalAbajo" class="principalabajo container bg-dark">
 
             
-            <div id="alumnosAdd" >
 
-            </div>
-
-
-        </div>
+            
+        </div> -->
 
 
 
