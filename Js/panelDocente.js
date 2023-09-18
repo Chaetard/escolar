@@ -15,7 +15,7 @@ function creadorClase(tamaño) {
 
 `;
 
-
+// para poder generar las tarjetas dentro de la pagina principal abajo
   for (let i = 0; i < tamaño; i++) {
     const div = document.createElement("div");
 
@@ -55,7 +55,7 @@ const elementosContainers = document.getElementsByClassName("classContainers");
 
 const contenedor_centralA = document.getElementById("contenedor_centralA");
 
-// Itera a través de los elementos y agrega el evento a cada uno
+// Itera a través de los elementos y agrega el evento a cada uno en este caso se les agrega un listener del click para que al hacer click en cada elemento se muestre en la parte del principal arriba 
 for (let i = 0; i < elementosContainers.length; i++) {
   elementosContainers[i].addEventListener("click", () => {
     for (let j = 0; j < elementosContainers.length; j++) {
