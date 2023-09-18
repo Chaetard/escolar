@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"crearclase.css"}
+{"version":3,"sourceRoot":"","sources":["visualizador.scss","crearclase.scss"],"names":[],"mappings":"AAEI;EACI;;;ACDR;EACE;EACA;EACA;;;AAEF;EACE;;;AAGF;EACE;EACA;;;AAEF;EACI;EACA;EACA;EACA;;AACA;EACI;;AACA;EACI","file":"crearclase.css"}

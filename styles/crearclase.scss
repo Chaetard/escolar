@@ -1,2 +1,27 @@
 @import "../styles/variables.scss";
+@import "../styles/visualizador.scss";
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+}
+.visualizador {
+  height: 100vh;
+}
 
+.creador {
+  overflow: auto;
+  width: 2fr;
+}
+nav{
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    background-color: red;
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+        }
+    }
+}

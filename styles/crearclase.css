@@ -1,3 +1,33 @@
+.visualizador #visuaCard {
+  padding-top: 50px;
+}
 
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+}
+
+.visualizador {
+  height: 100vh;
+}
+
+.creador {
+  overflow: auto;
+  width: 2fr;
+}
+
+nav {
+  position: fixed;
+  height: 50px;
+  width: 100vw;
+  background-color: red;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
 
 /*# sourceMappingURL=crearclase.css.map */
