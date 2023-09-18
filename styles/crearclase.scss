@@ -1,5 +1,6 @@
 @import "../styles/variables.scss";
 @import "../styles/visualizador.scss";
+@import "../styles/creadorclase.scss";
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -17,9 +18,17 @@ nav{
     position: fixed;
     height: 50px;
     width: 100vw;
-    background-color: red;
+    background-color: gray;
+    border-radius: 40px 0 0 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+   
     ul{
         display: flex;
+        height: 50px;
+        justify-content: space-between;
+        padding-right: 60px;
+        align-items: center;
         li{
             list-style: none;
         }

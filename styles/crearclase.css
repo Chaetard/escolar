@@ -1,5 +1,11 @@
 .visualizador #visuaCard {
-  padding-top: 50px;
+  padding-top: 60px;
+}
+
+.creador {
+  padding-top: 100px;
+  color: white;
+  padding-left: 20px;
 }
 
 main {
@@ -21,10 +27,17 @@ nav {
   position: fixed;
   height: 50px;
   width: 100vw;
-  background-color: red;
+  background-color: gray;
+  border-radius: 40px 0 0 40px;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 nav ul {
   display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding-right: 60px;
+  align-items: center;
 }
 nav ul li {
   list-style: none;
