@@ -21,10 +21,11 @@
     <nav>
         <ul>
             <h1>Mi Escolar</h1>
+            <li>Reiniciar Seleccion</li>
             <li>Regeresar al Inicio</li>
             <li>Configuraciones</li>
-            <li>Reiniciar Seleccion</li>
             
+
         </ul>
 
     </nav>
@@ -32,23 +33,89 @@
 
         <div class="creador bg-dark">
 
-          
+            <div class="d-flex contenedor-nombre">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" placeholder="  Ejemplo: Matematicas">
-                
-               
-           
+                <br>
+            </div>
 
+
+
+            <label for="grupo">Selecciona un Grupo</label>
+            <select id="grupo" name="grupo">
+                <option value="opcion1">Elige Una</option>
+                <option value="opcion2">1-A</option>
+                <option value="opcion3">1-B</option>
+                <option value="opcion4">1-C</option>
+                <option value="opcion5">2-A</option>
+                <option value="opcion6">2-B</option>
+                <option value="opcion7">2-C</option>
+                <option value="opcion8">3-A</option>
+                <option value="opcion9">3-B</option>
+                <option value="opcion10">3-C</option>
+            </select>
+
+            <div>
+                <label for=""> Selecciona un Icono:</label>
+
+                <br>
+                <img src="../img/calligraphy-abc-svgrepo-com.svg" height="70px" alt="">
+                <img src="../img/blackboard-svgrepo-com.svg" height="70px" alt="">
+                <img src="../img/atom-svgrepo-com.svg" height="70px" alt="">
+
+            </div>
+
+            <label>Selecciona un Dia</label>
+            <br>
+            <div class="diasC">
+                <div>
+                    <label for="diaL">Lunes</label> <input type="checkbox" name="diaL" id="diaL" class="dias">
+                </div>
+                <div>
+                    <label for="diaM">Martes</label>
+                    <input type="checkbox" name="diaM" id="diaM" class="dias">
+                </div>
+                <div>
+                    <label for="diaX">Miercoles</label>
+                    <input type="checkbox" name="diaX" id="diaX" class="dias">
+                </div>
+                <div>
+                    <label for="diaJ">Jueves</label>
+                    <input type="checkbox" name="diaJ" id="diaJ" class="dias">
+                </div>
+                <div>
+                    <label for="diaV">Viernes</label>
+                    <input type="checkbox" name="diaV" id="diaV" class="dias">
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+            <label for="hora">Selecciona una hora</label>
+            <select id="hora" name="hora">
+                <option value="opcion1">Elige Una</option>
+                <option value="opcion2">8-10</option>
+                <option value="opcion3">10-12</option>
+                <option value="opcion4">12-14</option>
+            </select>
+            <br>
+            <label for="tema">Selecciona Un Tema</label>
+            <input type="color" name="" id="" value="#666FFF">
 
         </div>
-        <aside class="visualizador bg-success">
+        <aside class="visualizador">
             <div class="text-center" id="visuaCard">
                 <h1>Creando Una Clase</h1>
                 <img src="../img/iconsmajor-svgrepo-com.svg" height="150px" alt="logo" id="logo">
                 <br>
                 <label for="logo">Icono</label>
                 <br>
-               
+
                 <label for="">Horario</label>
                 <p>00-00 00-00</p>
                 <br>
@@ -56,7 +123,7 @@
                 <br>
                 <p>Nombre de la Materia</p>
                 <br>
-
+                <button type="button" class="btn btn-outline-success ">Crear</button>
             </div>
         </aside>
 

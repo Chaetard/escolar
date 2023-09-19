@@ -8,6 +8,42 @@
   padding-left: 20px;
 }
 
+.contenedor-nombre {
+  align-items: center;
+}
+
+#nombre {
+  width: 46vw;
+  margin-left: 10px;
+  height: 35px;
+}
+
+label {
+  font-size: 25px;
+}
+
+#grupo,
+#dia,
+#hora {
+  font-size: 20px;
+}
+
+.diasC {
+  display: grid;
+  grid-template-rows: repeat(1fr, 5);
+  align-items: center;
+}
+
+.dias {
+  height: 18px;
+  width: 18px;
+  margin-left: 20px;
+}
+
+img {
+  margin: 0 20px 0 20px;
+}
+
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
