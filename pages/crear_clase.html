@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/crearclase.css">
 
+    <script src="../Js/panelCrearClase.js" defer>
+
+    </script>
+
 
 
 </head>
@@ -24,7 +28,7 @@
             <li>Reiniciar Seleccion</li>
             <li>Regeresar al Inicio</li>
             <li>Configuraciones</li>
-            
+
 
         </ul>
 
@@ -35,7 +39,7 @@
 
             <div class="d-flex contenedor-nombre">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="  Ejemplo: Matematicas">
+                <input type="text" id="nombre" name="nombreMateriaI" placeholder="  Ejemplo: Matematicas">
                 <br>
             </div>
 
@@ -121,7 +125,8 @@
                 <br>
                 <p>Dias</p>
                 <br>
-                <p>Nombre de la Materia</p>
+                <p >Nombre de la Materia</p>
+                <p id="materiaN">***</p>
                 <br>
                 <button type="button" class="btn btn-outline-success ">Crear</button>
             </div>
