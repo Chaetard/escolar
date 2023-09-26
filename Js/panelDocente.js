@@ -7,7 +7,7 @@ const principalAbajo = document.getElementById("principalAbajo");
 function creadorClase(tamaño) {
   const divmore = document.createElement("div");
   divmore.innerHTML = `
-  <a style="text-decoration: none !important; color:blue;" href=""><div class="classContainers" style="display: flex; ">
+  <a style="text-decoration: none !important; color:blue;" href="../pages/crear_clase.html"><div class="classContainers" style="display: flex; ">
             
   <img id="imgplus" height="80px" src="../img/plus-svgrepo-com.svg" alt="">
 <h1>Añadir Una Clase</h1>

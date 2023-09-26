@@ -1,5 +1,8 @@
 .visualizador #visuaCard {
-  padding-top: 60px;
+  padding-top: 60px !important;
+}
+.visualizador .tarjeta {
+  margin-top: 60px;
 }
 
 .creador {
@@ -42,6 +45,10 @@ label {
 
 img {
   margin: 0 20px 0 20px;
+}
+
+#iconos img {
+  height: 80px;
 }
 
 main {

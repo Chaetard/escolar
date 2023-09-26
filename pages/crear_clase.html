@@ -12,10 +12,9 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/crearclase.css">
+    <script src="../Js/dataCClassimg.js" defer></script>
+    <script src="../Js/panelCrearClase.js" defer></script>
 
-    <script src="../Js/panelCrearClase.js" defer>
-
-    </script>
 
 
 
@@ -39,10 +38,27 @@
 
             <div class="d-flex contenedor-nombre">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombreMateriaI" placeholder="  Ejemplo: Matematicas">
+                <input type="text" id="nombre" maxlength="30" name="nombreMateriaI"
+                    placeholder="  Ejemplo: Matematicas">
                 <br>
             </div>
+            <label for=""> Selecciona un Icono:</label>
+            <div id="iconos">
 
+
+                <br>
+                <img src="../img/menuclaseicons/abacus-svgrepo-com.svg" alt="">
+                <img src="../img/menuclaseicons/alphabet-svgrepo-com.svg" alt="">
+                <img src="../img/menuclaseicons/atom-svgrepo-com.svg" alt="">
+                <img src="../img/menuclaseicons/calculator-svgrepo-com.svg" alt="">
+                <img src="../img/menuclaseicons/laptop-svgrepo-com.svg" alt="">
+                <img src="../img/menuclaseicons/microscope-svgrepo-com.svg" alt="">
+                <img src="../img/menuclaseicons/rocket-svgrepo-com.svg" alt="">
+                <img src="../img/menuclaseicons/school-university-svgrepo-com.svg" alt="">
+                <img src="../img/menuclaseicons/test-tubes-science-svgrepo-com.svg" alt="">
+
+
+            </div>
 
 
             <label for="grupo">Selecciona un Grupo</label>
@@ -59,15 +75,6 @@
                 <option value="opcion10">3-C</option>
             </select>
 
-            <div>
-                <label for=""> Selecciona un Icono:</label>
-
-                <br>
-                <img src="../img/calligraphy-abc-svgrepo-com.svg" height="70px" alt="">
-                <img src="../img/blackboard-svgrepo-com.svg" height="70px" alt="">
-                <img src="../img/atom-svgrepo-com.svg" height="70px" alt="">
-
-            </div>
 
             <label>Selecciona un Dia</label>
             <br>
@@ -109,12 +116,12 @@
             </select>
             <br>
             <label for="tema">Selecciona Un Tema</label>
-            <input type="color" name="" id="" value="#666FFF">
+            <input type="color" name="color_tarjeta" id="color_tarjeta">
 
         </div>
-        <aside class="visualizador">
-            <div class="text-center" id="visuaCard">
-                <h1>Creando Una Clase</h1>
+        <aside class="visualizador" id="visuaCard">
+            <div class="text-center tarjeta">
+                <h1 id="materiaN">Creando Una Clase</h1>
                 <img src="../img/iconsmajor-svgrepo-com.svg" height="150px" alt="logo" id="logo">
                 <br>
                 <label for="logo">Icono</label>
@@ -125,8 +132,7 @@
                 <br>
                 <p>Dias</p>
                 <br>
-                <p >Nombre de la Materia</p>
-                <p id="materiaN">***</p>
+
                 <br>
                 <button type="button" class="btn btn-outline-success ">Crear</button>
             </div>

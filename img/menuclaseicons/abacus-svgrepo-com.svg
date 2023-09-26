@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 491.6 491.6" xml:space="preserve">
+<g>
+	<rect x="50.15" y="76.6" style="fill:#EBF0F3;" width="391.6" height="8.9"/>
+	<rect x="50.15" y="168.1" style="fill:#EBF0F3;" width="391.6" height="8.9"/>
+</g>
+<circle style="fill:#44C4A1;" cx="121.85" cy="172.5" r="31.5"/>
+<circle style="fill:#27A2DB;" cx="199.55" cy="172.5" r="31.5"/>
+<circle style="fill:#FCD462;" cx="277.25" cy="172.5" r="31.5"/>
+<circle style="fill:#E56353;" cx="354.95" cy="172.5" r="31.5"/>
+<rect x="50.15" y="259.6" style="fill:#EBF0F3;" width="391.6" height="8.9"/>
+<circle style="fill:#E56353;" cx="121.85" cy="264" r="31.5"/>
+<circle style="fill:#FCD462;" cx="199.55" cy="264" r="31.5"/>
+<circle style="fill:#27A2DB;" cx="277.25" cy="264" r="31.5"/>
+<circle style="fill:#44C4A1;" cx="354.95" cy="264" r="31.5"/>
+<rect x="50.15" y="351" style="fill:#EBF0F3;" width="391.6" height="8.9"/>
+<circle style="fill:#27A2DB;" cx="121.85" cy="355.5" r="31.5"/>
+<circle style="fill:#44C4A1;" cx="199.55" cy="355.5" r="31.5"/>
+<circle style="fill:#E56353;" cx="277.25" cy="355.5" r="31.5"/>
+<g>
+	<circle style="fill:#FCD462;" cx="354.95" cy="355.5" r="31.5"/>
+	<circle style="fill:#FCD462;" cx="121.85" cy="81" r="31.5"/>
+</g>
+<circle style="fill:#E56353;" cx="199.55" cy="81" r="31.5"/>
+<circle style="fill:#44C4A1;" cx="277.25" cy="81" r="31.5"/>
+<circle style="fill:#27A2DB;" cx="354.95" cy="81" r="31.5"/>
+<path style="fill:#64798A;" d="M23.85,16.4v409.8h16.4V0C31.15,0,23.85,7.4,23.85,16.4z"/>
+<path style="fill:#3A556A;" d="M40.15,0v426.1h16.4V16.4C56.55,7.4,49.25,0,40.15,0z"/>
+<path style="fill:#64798A;" d="M434.95,16.4v409.8h16.4V0C442.25,0,434.95,7.4,434.95,16.4z"/>
+<path style="fill:#3A556A;" d="M467.65,16.4c0-9-7.3-16.4-16.4-16.4v426.1h16.4V16.4z"/>
+<path style="fill:#FCD462;" d="M482.55,405H8.95c-4.9,0-8.9,4-8.9,8.9v77.7h491.5v-77.7C491.55,409,487.55,405,482.55,405z"/>
+</svg>
