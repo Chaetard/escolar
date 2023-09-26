@@ -51,6 +51,20 @@ img {
   height: 80px;
 }
 
+.imagenes {
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+
+.imagenes:hover {
+  cursor: pointer;
+  background-color: rgba(76, 75, 75, 0.541);
+  transform: scale(1.15);
+  transition: 0.4s;
+}
+
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
