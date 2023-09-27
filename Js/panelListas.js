@@ -3,7 +3,7 @@ const alumnosL = alumnos.map((clase) => {
 });
 
 const alumnosAdd = document.getElementById("alumnosAdd");
-
+setNombre();
 function alumnoBuscado(tamaño, palabraClave) {
   for (let i = 0; i < tamaño; i++) {
     const divmore = document.createElement("div");

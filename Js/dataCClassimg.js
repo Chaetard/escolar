@@ -47,6 +47,7 @@ const imgs = [
   },
 ];
 
+localStorage.setItem("imgs", JSON.stringify(imgs));
                 /* <img src="" alt="">
                 <img src="../img/menuclaseicons/alphabet-svgrepo-com.svg" alt="">
                 <img src="../img/menuclaseicons/atom-svgrepo-com.svg" alt="">
