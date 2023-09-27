@@ -8,6 +8,9 @@
 
 
     <!-- Estilos Y Bootstap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/reset.css">
@@ -23,10 +26,9 @@
 <body>
     <nav>
         <ul>
-            <h1>Mi Escolar</h1>
-            <li>Reiniciar Seleccion</li>
-            <li>Regeresar al Inicio</li>
-            <li>Configuraciones</li>
+            <a href="../pages/panel-docente.html"><h1>Mi Escolar</h1></a>
+            
+            
 
 
         </ul>
@@ -98,16 +100,16 @@
 
                 <label for="grupo">Selecciona un Grupo</label>
                 <select id="grupo" name="grupo">
-                    <option value="opcion1">Elige Una</option>
-                    <option value="opcion2">1-A</option>
-                    <option value="opcion3">1-B</option>
-                    <option value="opcion4">1-C</option>
-                    <option value="opcion5">2-A</option>
-                    <option value="opcion6">2-B</option>
-                    <option value="opcion7">2-C</option>
-                    <option value="opcion8">3-A</option>
-                    <option value="opcion9">3-B</option>
-                    <option value="opcion10">3-C</option>
+                    <option value="Elige Una Opcion">Elige Una Opcion</option>
+                    <option value="1-A">1-A</option>
+                    <option value="1-B">1-B</option>
+                    <option value="1-C">1-C</option>
+                    <option value="2-A">2-A</option>
+                    <option value="2-B">2-B</option>
+                    <option value="2-C">2-C</option>
+                    <option value="3-A">3-A</option>
+                    <option value="3-B">3-B</option>
+                    <option value="3-C">3-C</option>
                 </select>
 
 
@@ -116,28 +118,53 @@
 
 
             <br>
-            <label for="tema">Selecciona Un Tema</label>
-            <input type="color" name="color_tarjeta" id="color_tarjeta">
+
 
         </div>
         <aside class="visualizador" id="visuaCard">
             <div class="text-center tarjeta">
                 <h1 id="materiaN">Creando Una Clase</h1>
                 <img src="../img/iconsmajor-svgrepo-com.svg" height="150px" alt="logo" id="logo">
-                
+
                 <br>
 
                 <label for="">Horario</label>
-                <p id="horaselect"  >Seleccione Una Hora</p>
+                <p id="horaselect">Seleccione Una Hora</p>
                 <br>
+                <p id="gruposelect"> Selecciona Un Grupo</p>
                 <p>Dias</p>
+
                 <div id="contenedordias">
 
                 </div>
                 <br>
 
                 <br>
-                <button type="button" class="btn btn-outline-success ">Crear</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Crear
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Crear una Clase</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Estas Seguro de Crear Esta Clase?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <form action="">  <button type="submit" class="btn btn-primary">Guardar Cambios</button>  </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </aside>
 

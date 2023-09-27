@@ -14,15 +14,9 @@ nombre.addEventListener("keyup", (e) => {
 });
 
 const visuaCard = document.getElementById("visuaCard");
-
-const color_tarjetaListener = document.getElementById("color_tarjeta");
-
-color_tarjetaListener.addEventListener("input", () => {
-  const color_tarjeta = document.getElementById("color_tarjeta").value;
-  visuaCard.style.backgroundColor = color_tarjeta;
-});
-
 const iconos = document.getElementById("iconos");
+
+
 const elementos = document.getElementsByClassName("imagenes");
 const logo = document.getElementById("logo");
 
@@ -35,7 +29,9 @@ for (let i = 0; i < elementos.length; i++) {
     limpiarFondo();
     logo.src = elementos[i].src;
     console.log(elementos[i].src);
-    elementos[i].style.backgroundColor = "rgba(5, 173, 5, 0.835)";
+    console.log(img[i].color);
+    elementos[i].style.backgroundColor = img[i].color;
+    visuaCard.style.backgroundColor = img[i].color;
   });
 }
 
@@ -58,7 +54,6 @@ const contenedordias = document.getElementById("contenedordias");
 const checkboxes = document.getElementsByClassName("dias");
 
 for (var i = 0; i < checkboxes.length; i++) {
-  // Captura el valor de 'i' en cada iteración
   (function (index) {
     checkboxes[index].addEventListener("change", function () {
       if (this.checked) {
@@ -74,4 +69,13 @@ for (var i = 0; i < checkboxes.length; i++) {
   })(i);
 }
 
+
+const grupo = document.getElementById("grupo");
+const grupovista = document.getElementById("gruposelect");
+
+grupo.addEventListener("input", () => {
+  const grupo = document.getElementById("grupo").value;
+  console.log(grupo);
+  gruposelect.innerText = grupo;
+});
 

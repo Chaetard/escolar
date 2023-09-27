@@ -65,6 +65,16 @@ img {
   transition: 0.4s;
 }
 
+#grupo {
+  text-align: center;
+  width: 25%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;

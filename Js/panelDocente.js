@@ -78,7 +78,7 @@ for (let i = 0; i < elementosContainers.length; i++) {
                         Menu
                     <li> <a href=""> Panel General </a>  </li>
                     <li> <a href=""> Lista De Alumnos </a></li>
-                    <li> <a href=""> Analisis Estadistico </a></li>
+                    <li> <a href=""> Analisis  </a></li>
                     <li> <a href=""> Panel De Notas </a></li>
                     
                         
