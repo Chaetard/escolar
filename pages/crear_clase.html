@@ -18,17 +18,19 @@
     <script src="../Js/dataCClassimg.js" defer></script>
     <script src="../Js/panelCrearClase.js" defer></script>
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
 </head>
 
 <body>
-    <nav>
+    <nav class="animate__animated animate__fadeInRight">
         <ul>
-            <a href="../pages/panel-docente.html"><h1>Mi Escolar</h1></a>
-            
-            
+            <a href="../pages/panel-docente.html">
+                <h1>Mi Escolar</h1>
+            </a>
+
+
 
 
         </ul>
@@ -65,6 +67,50 @@
 
 
 
+
+            <label>Selecciona un Dia: </label>
+            <br>
+            <div class="diasC">
+
+                <label class="Ldias" for="diaL">Lunes</label> <input type="checkbox" name="Lunes" id="diaL" class="dias"
+                    hidden>
+
+                <label class="Ldias" for="diaM">Martes</label>
+                <input type="checkbox" name="Martes" id="diaM" class="dias" hidden>
+
+                <label class="Ldias" for="diaX">Miercoles</label>
+                <input type="checkbox" name="Miercoles" id="diaX" class="dias" hidden>
+
+                <label class="Ldias" for="diaJ">Jueves</label>
+                <input type="checkbox" name="Jueves" id="diaJ" class="dias" hidden>
+
+                <label class="Ldias" for="diaV">Viernes</label>
+                <input type="checkbox" name="Viernes" id="diaV" class="dias" hidden>
+
+
+
+
+
+
+
+            </div>
+
+            <label for="grupo">Selecciona un Grupo</label>
+            <select id="grupo" name="grupo">
+                <option value="Elige Una Opcion">Elige Una Opcion</option>
+                <option value="1-A">1-A</option>
+                <option value="1-B">1-B</option>
+                <option value="1-C">1-C</option>
+                <option value="2-A">2-A</option>
+                <option value="2-B">2-B</option>
+                <option value="2-C">2-C</option>
+                <option value="3-A">3-A</option>
+                <option value="3-B">3-B</option>
+                <option value="3-C">3-C</option>
+            </select>
+
+            <br>
+
             <label for="hora">Selecciona una hora</label>
             <select id="hora" name="hora">
                 <option value="Escoja una Hora">Elige Una</option>
@@ -73,53 +119,6 @@
                 <option value="12pm - 2pm">12-14</option>
             </select>
             <br>
-            <label>Selecciona un Dia</label>
-            <br>
-            <div class="diasC">
-                <div>
-                    <label for="diaL">Lunes</label> <input type="checkbox" name="Lunes" id="diaL" class="dias">
-                </div>
-                <div>
-                    <label for="diaM">Martes</label>
-                    <input type="checkbox" name="Martes" id="diaM" class="dias">
-                </div>
-                <div>
-                    <label for="diaX">Miercoles</label>
-                    <input type="checkbox" name="Miercoles" id="diaX" class="dias">
-                </div>
-                <div>
-                    <label for="diaJ">Jueves</label>
-                    <input type="checkbox" name="Jueves" id="diaJ" class="dias">
-                </div>
-                <div>
-                    <label for="diaV">Viernes</label>
-                    <input type="checkbox" name="Viernes" id="diaV" class="dias">
-                </div>
-
-
-
-                <label for="grupo">Selecciona un Grupo</label>
-                <select id="grupo" name="grupo">
-                    <option value="Elige Una Opcion">Elige Una Opcion</option>
-                    <option value="1-A">1-A</option>
-                    <option value="1-B">1-B</option>
-                    <option value="1-C">1-C</option>
-                    <option value="2-A">2-A</option>
-                    <option value="2-B">2-B</option>
-                    <option value="2-C">2-C</option>
-                    <option value="3-A">3-A</option>
-                    <option value="3-B">3-B</option>
-                    <option value="3-C">3-C</option>
-                </select>
-
-
-            </div>
-
-
-
-            <br>
-
-
         </div>
         <aside class="visualizador" id="visuaCard">
             <div class="text-center tarjeta">
@@ -159,8 +158,9 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <form action="">  <button type="submit" class="btn btn-primary">Guardar Cambios</button>  </form>
-                                
+                                <form action=""> <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                </form>
+
                             </div>
                         </div>
                     </div>

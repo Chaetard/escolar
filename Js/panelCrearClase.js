@@ -3,13 +3,23 @@ const img = imgs.map((img) => {
 });
 
 const nombre = document.getElementById("nombre");
-
 const materiaN = document.getElementById("materiaN");
-
+materiaN.style.border = "3px solid red";
 nombre.addEventListener("keyup", (e) => {
   let nombreM = e.target.value;
 
-  materiaN.innerText = nombreM;
+  if (nombreM.length == 0) {
+    materiaN.innerText = "Nombre de la materia";
+  } else {
+    materiaN.innerText = nombreM;
+
+    if (nombreM.length >= 5) {
+      materiaN.style.border = "3px solid blue";
+    } else {
+      materiaN.style.border = "3px solid red";
+    }
+  }
+  
 });
 
 const visuaCard = document.getElementById("visuaCard");
@@ -49,16 +59,18 @@ hora.addEventListener("input", () => {
 
 const contenedordias = document.getElementById("contenedordias");
 const checkboxes = document.getElementsByClassName("dias");
+const semana = document.getElementsByClassName("Ldias");
 
 for (var i = 0; i < checkboxes.length; i++) {
   (function (index) {
     checkboxes[index].addEventListener("change", function () {
       if (this.checked) {
         contenedordias.innerHTML += `<span  class="${checkboxes[index].id}" >   ${checkboxes[index].name}</span>`;
+        semana[index].style.backgroundColor = "rgb(30, 201, 73)";
       } else {
         let elemento = document.getElementsByClassName(checkboxes[index].id);
-
         elemento[0].remove();
+        semana[index].style.backgroundColor = "";
       }
     });
   })(i);
