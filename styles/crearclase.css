@@ -92,13 +92,27 @@ img {
   width: 25%;
 }
 
-.Ldias {
+.Ldias,
+.gradosBtn,
+.gruposBtn {
   width: 80%;
   background-color: rgb(0, 82, 126);
   border-radius: 10px;
   text-align: center;
   margin: 5px;
   margin: 10px 0;
+  user-select: none;
+}
+
+.gradosBtn,
+.gruposBtn {
+  width: 20% !important;
+}
+
+#contenedorGG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {

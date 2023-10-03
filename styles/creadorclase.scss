@@ -21,27 +21,26 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
-  #diaL{
+  #diaL {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  #diaM{
+  #diaM {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-  #diaX{
+  #diaX {
     grid-column-start: 3;
     grid-column-end: 4;
   }
-  #diaJ{
+  #diaJ {
     grid-column-start: 4;
     grid-column-end: 5;
   }
-  #diaV{
+  #diaV {
     grid-column-start: 5;
     grid-column-end: 6;
   }
-
 }
 .dias {
   height: 18px;
@@ -74,13 +73,24 @@ img {
   width: 25%;
 }
 
-
-.Ldias{
+.Ldias,
+.gradosBtn,
+.gruposBtn {
   width: 80%;
   background-color: rgb(0, 82, 126);
   border-radius: 10px;
   text-align: center;
   margin: 5px;
-  margin: 10px 0 ;
+  margin: 10px 0;
+  user-select: none;
+}
+.gradosBtn,
+.gruposBtn {
+  width: 20% !important;
+}
+#contenedorGG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 // 49 201 163

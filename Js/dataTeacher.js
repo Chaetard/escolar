@@ -1,5 +1,5 @@
 const dataTeacher = {
-  name: "Josue Ramirez",
+  name: "Juan Pedroso Locura Nañes",
   age: 30,
   country: "Mexico",
 };

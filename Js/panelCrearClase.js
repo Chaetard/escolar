@@ -2,24 +2,39 @@ const img = imgs.map((img) => {
   return img;
 });
 
+let estadoNombre = false;
+
 const nombre = document.getElementById("nombre");
 const materiaN = document.getElementById("materiaN");
-materiaN.style.border = "3px solid red";
+estadoNombre = false;
+let globalNum = 0;
 nombre.addEventListener("keyup", (e) => {
   let nombreM = e.target.value;
-
+  globalNum = nombreM.length;
   if (nombreM.length == 0) {
     materiaN.innerText = "Nombre de la materia";
   } else {
     materiaN.innerText = nombreM;
 
     if (nombreM.length >= 5) {
-      materiaN.style.border = "3px solid blue";
+      estadoNombre = true;
+      estado();
     } else {
-      materiaN.style.border = "3px solid red";
+      estadoNombre = false;
+      estado();
     }
   }
-  
+});
+
+nombre.addEventListener("keyup", function (event) {
+  // Verifica si la tecla presionada es el retroceso (Backspace)
+  if (event.key === "Backspace") {
+    if (globalNum <= 4) {
+      estadoNombre = false;
+    }
+
+    estado();
+  }
 });
 
 const visuaCard = document.getElementById("visuaCard");
@@ -76,10 +91,50 @@ for (var i = 0; i < checkboxes.length; i++) {
   })(i);
 }
 
-const grupo = document.getElementById("grupo");
-const grupovista = document.getElementById("gruposelect");
+// const grupo = document.getElementById("grupo");
+// const grupovista = document.getElementById("gruposelect");
 
-grupo.addEventListener("input", () => {
-  const grupo = document.getElementById("grupo").value;
-  gruposelect.innerText = grupo;
-});
+// grupo.addEventListener("input", () => {
+//   const grupo = document.getElementById("grupo").value;
+//   gruposelect.innerText = grupo;
+// });
+
+const radioGrado = document.getElementsByClassName("radioGrado");
+const gradosBtn = document.getElementsByClassName("gradosBtn");
+console.log(radioGrado);
+
+const grado = document.getElementById("gradoselect");
+for (let i = 0; i < radioGrado.length; i++) {
+  radioGrado[i].addEventListener("click", () => {
+    grado.innerText = radioGrado[i].value;
+    for (let j = 0; j < gradosBtn.length; j++) {
+      gradosBtn[j].style.backgroundColor = "";
+    }
+    gradosBtn[i].style.backgroundColor = "rgb(30, 201, 73)";
+  });
+}
+
+const radioGrupo = document.getElementsByClassName("radioGrupo");
+const gruposBtn = document.getElementsByClassName("gruposBtn");
+console.log(radioGrupo);
+
+const grupo = document.getElementById("gruposelect");
+for (let i = 0; i < radioGrupo.length; i++) {
+  radioGrupo[i].addEventListener("click", () => {
+    grupo.innerText = radioGrupo[i].value;
+    for (let j = 0; j < gruposBtn.length; j++) {
+      gruposBtn[j].style.backgroundColor = "";
+    }
+    gruposBtn[i].style.backgroundColor = "rgb(30, 201, 73)";
+  });
+}
+
+const btn = document.getElementById("estadoNombrebtn");
+btn.disabled = true;
+function estado() {
+  if (estadoNombre) {
+    btn.disabled = false;
+  } else {
+    btn.disabled = true;
+  }
+}

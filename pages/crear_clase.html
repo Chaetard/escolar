@@ -95,22 +95,29 @@
 
             </div>
 
-            <label for="grupo">Selecciona un Grupo</label>
-            <select id="grupo" name="grupo">
-                <option value="Elige Una Opcion">Elige Una Opcion</option>
-                <option value="1-A">1-A</option>
-                <option value="1-B">1-B</option>
-                <option value="1-C">1-C</option>
-                <option value="2-A">2-A</option>
-                <option value="2-B">2-B</option>
-                <option value="2-C">2-C</option>
-                <option value="3-A">3-A</option>
-                <option value="3-B">3-B</option>
-                <option value="3-C">3-C</option>
-            </select>
+            <label for="grupo">Selecciona un Grado</label>
+            <br>
+
+            <Label for="primeroG" class="gradosBtn">Primero</Label><input type="radio" name="opGrado" value="1 - "
+                id="primeroG" hidden class="radioGrado">
+            <Label for="segundoG" class="gradosBtn">Segundo</Label> <input type="radio" name="opGrado" value="2 - "
+                id="segundoG" hidden class="radioGrado">
+            <Label for="terceroG" class="gradosBtn">Tercero</Label><input type="radio" name="opGrado" value="3 - "
+                id="terceroG" hidden class="radioGrado">
 
             <br>
 
+
+            <label for="grupo">Selecciona un Grupo</label>
+            <br>
+
+            <Label for="aG" class="gruposBtn">A</Label><input type="radio" name="opGrupo" value=" A" id="aG" hidden
+                class="radioGrupo">
+            <Label for="bG" class="gruposBtn">B</Label> <input type="radio" name="opGrupo" value=" B" id="bG" hidden
+                class="radioGrupo">
+            <Label for="cG" class="gruposBtn">C</Label><input type="radio" name="opGrupo" value=" C " id="cG" hidden
+                class="radioGrupo">
+            <br>
             <label for="hora">Selecciona una hora</label>
             <select id="hora" name="hora">
                 <option value="Escoja una Hora">Elige Una</option>
@@ -130,8 +137,14 @@
                 <label for="">Horario</label>
                 <p id="horaselect">Seleccione Una Hora</p>
                 <br>
-                <p id="gruposelect"> Selecciona Un Grupo</p>
+                <p> Crear Un Grupo</p>
+                <div id="contenedorGG">
+                    <p id="gradoselect">-</p>
+                    <p id="gruposelect"></p>
+                </div> <br>
                 <p>Dias</p>
+
+
 
                 <div id="contenedordias">
 
@@ -139,8 +152,9 @@
                 <br>
 
                 <br>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Crear
+                <button type="button" class="btn btn-primary" id="estadoNombrebtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Crear Clase
                 </button>
 
                 <!-- Modal -->
